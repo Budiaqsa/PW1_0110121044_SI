@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas JS 2 Budi aqsha nawawi | Soal 4 | Kurs Rupiah</title>
+</head>
+<body>
+    
+    <label for="dollar">Dollar</label>
+    <input type="number" id="dollar">
+
+    <button onclick="hitungKursDollar()">Hitung</button>
+
+    <label for="rupiah">Rupiah</label>
+    <input type="number" id="rupiah">
+
+    <script>
+
+        function hitungKursDollar() {
+            const dollar = document.getElementById('dollar')
+            const rupiah = document.getElementById('rupiah')
+
+            rupiah.value = dollar.value * 14650;
+        }
+    </script>
+    
+</body>
+</html>
